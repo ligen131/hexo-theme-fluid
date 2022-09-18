@@ -20,12 +20,18 @@ body
     color var(--text-color)
     text-decoration none
     cursor pointer
-    transition color .2s ease-in-out, background-color .2s ease-in-out
+    background-image: linear-gradient(currentColor, currentColor);
+    background-repeat: no-repeat;
+    background-size: 0% 10%;
+    background-position: 100% 100%;
+    transition color .2s ease-in-out, background-color .2s ease-in-out, background-size .35s ease-in-out
 
     &:hover
       color var(--link-hover-color)
       text-decoration none
-      transition color .2s ease-in-out, background-color .2s ease-in-out
+      background-size: 100% 10%;
+      background-position: 0% 100%;
+      transition color .2s ease-in-out, background-color .2s ease-in-out, background-size .2s ease-in-out
 
 code
   color inherit

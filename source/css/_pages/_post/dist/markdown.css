@@ -1,0 +1,106 @@
+.markdown-body {
+  font-size: 1rem;
+  line-height: 1.6;
+  font-family: $font-family;
+  margin-bottom: 2rem;
+  color: var(--post-text-color);
+}
+.markdown-body > h1,
+.markdown-body h2 {
+  border-bottom-color: var(--line-color);
+}
+.markdown-body > h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  color: var(--post-heading-color);
+  transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+  font-weight: bold;
+  margin-bottom: 0.75em;
+  margin-top: 2em;
+}
+.markdown-body > h1:focus,
+.markdown-body h2:focus,
+.markdown-body h3:focus,
+.markdown-body h4:focus,
+.markdown-body h5:focus,
+.markdown-body h6:focus {
+  outline: none;
+}
+.markdown-body a {
+  color: var(--post-link-color);
+  text-decoration: none !important;
+}
+.markdown-body strong {
+  font-weight: bold;
+}
+.markdown-body code {
+  tab-size: 4;
+  background-color: var(--inlinecode-bg-color);
+  transition: background-color 0.2s ease-in-out;
+}
+.markdown-body table tr {
+  background-color: var(--board-bg-color);
+  transition: background-color 0.2s ease-in-out;
+}
+.markdown-body table tr:nth-child(2n) {
+  background-color: var(--board-bg-color);
+  transition: background-color 0.2s ease-in-out;
+}
+.markdown-body table th,
+.markdown-body table td {
+  border-color: var(--line-color);
+  transition: border-color 0.2s ease-in-out;
+}
+.markdown-body pre {
+  font-size: $code-font-size !important;
+}
+.markdown-body pre .mermaid {
+  text-align: center;
+}
+.markdown-body pre .mermaid > svg {
+  min-width: 100%;
+}
+.markdown-body p > img,
+.markdown-body p > a > img,
+.markdown-body figure > img,
+.markdown-body figure > a > img {
+  max-width: 90%;
+  margin: 1.5rem auto;
+  display: block;
+  box-shadow: $img-shadow;
+  border-radius: 4px;
+  background-color: transparent;
+}
+.markdown-body blockquote {
+  color: var(--sec-text-color);
+}
+.markdown-body details {
+  cursor: pointer;
+}
+.markdown-body details summary {
+  outline: none;
+}
+hr,
+.markdown-body hr {
+  background-color: initial;
+  border-top: 1px solid var(--line-color);
+  transition: border-top-color 0.2s ease-in-out;
+}
+.markdown-body hr {
+  height: 0;
+  margin: 2rem 0;
+}
+.markdown-body figcaption.image-caption {
+  font-size: 0.8rem;
+  color: var(--post-text-color);
+  opacity: 0.65;
+  line-height: 1;
+  margin: -0.75rem auto 2rem;
+  text-align: center;
+}
+.markdown-body figcaption:not(.image-caption) {
+  display: none;
+}
